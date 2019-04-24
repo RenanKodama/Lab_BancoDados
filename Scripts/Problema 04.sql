@@ -139,6 +139,5 @@ LANGUAGE plpgsql;
 -- 				SELECT valorTotal_Pedido(1602098, 2098);
 -- 			)
 
-
 /*Chamando Procedimentos e Triggers*/
 SELECT valorTotal_Pedido(1602098, 2098);
