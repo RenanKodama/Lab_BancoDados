@@ -122,33 +122,23 @@ BEGIN
 	ELSE
 		RETURN -1;
 	END IF;
-
-	/*Solução do prof. André*/
-	/*SELECT SUM(PTP.preco) INTO precoTotal FROM Pedidos_Tem_Produtos AS PTP
-	WHERE PTP.num_cliente = id_cliente AND 
-	      PTP.num_pedido = num_pedido1;																																			
-
-	IF precoTotal > 0 THEN
-		RETURN precoTotal;
-	ELSE
-		RETURN -1;
-	END IF;*/
 END;
 $BODY$
 LANGUAGE plpgsql;
 
-/*
-CREATE OR REPLACE TRIGGER trigger_LucroAnual
-	AFTER 
-		INSERT OR 
-		UPDATE 
-	ON Pedidos_Tem_Produtos 
-BEGIN
-	CASE
-		WHEN INSERTING THEN
-			Pedidos_Tem_Produtos.subTotal = old
-*/ 
 
-/*Chamando Funções e Triggers*/
+-- CREATE OR REPLACE TRIGGER trigger_LucroAnual
+-- 	AFTER 
+-- 		INSERT OR
+-- 		UPDATE 
+-- 	ON Pedidos_Tem_Produtos 
+-- BEGIN
+-- 	CASE
+-- 		WHEN INSERTING OR UPDATING THEN
+-- 			INSERT INTO Pedidos_Tem_Produtos(subTotal) VALUES(
+-- 				SELECT valorTotal_Pedido(1602098, 2098);
+-- 			)
+
+
+/*Chamando Procedimentos e Triggers*/
 SELECT valorTotal_Pedido(1602098, 2098);
-
