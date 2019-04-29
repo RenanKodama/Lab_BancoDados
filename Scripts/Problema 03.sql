@@ -1,5 +1,5 @@
 ﻿/* 
-  Universidade Federal do Paraná
+  Universidade Tecnológica Federal do Paraná - CM
   Renan Kodama Rodrigues 1602098
   Laboratorio de Banco de Dados
 

@@ -1,5 +1,5 @@
 ﻿/* 
-  Universidade Federal do Paraná
+  Universidade Tecnológica Federal do Paraná - CM
   Renan Kodama Rodrigues 1602098
   Laboratorio de Banco de Dados
 
@@ -138,6 +138,7 @@ LANGUAGE plpgsql;
 -- 			INSERT INTO Pedidos_Tem_Produtos(subTotal) VALUES(
 -- 				SELECT valorTotal_Pedido(1602098, 2098);
 -- 			)
+
 
 /*Chamando Procedimentos e Triggers*/
 SELECT valorTotal_Pedido(1602098, 2098);
